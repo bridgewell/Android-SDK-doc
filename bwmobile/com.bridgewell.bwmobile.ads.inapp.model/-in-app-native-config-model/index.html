@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InAppNativeConfigModel</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Android-SDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":bwmobile:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="bwmobile::com.bridgewell.bwmobile.ads.inapp.model/InAppNativeConfigModel///PointingToDeclaration//-224945092">
+  <div class="breadcrumbs"><a href="../../index.html">bwmobile</a><span class="delimiter">/</span><a href="../index.html">com.bridgewell.bwmobile.ads.inapp.model</a><span class="delimiter">/</span><span class="current">InAppNativeConfigModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>In</span><wbr><span>App</span><wbr><span>Native</span><wbr><span>Config</span><wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">InAppNativeConfigModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>contextType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXT_TYPE///PointingToDeclaration/">NativeAdUnit.CONTEXT_TYPE</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>placementType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.PLACEMENTTYPE///PointingToDeclaration/">NativeAdUnit.PLACEMENTTYPE</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>contextSubType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXTSUBTYPE///PointingToDeclaration/">NativeAdUnit.CONTEXTSUBTYPE</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>eventTracker<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TYPE///PointingToDeclaration/">NativeEventTracker.EVENT_TYPE</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>trackerMethods<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TRACKING_METHOD///PointingToDeclaration/">NativeEventTracker.EVENT_TRACKING_METHOD</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>titleAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeTitleAsset///PointingToDeclaration/">NativeTitleAsset</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>iconAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>imageAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dataAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bodyAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ctaAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">InAppNativeConfigModel</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1099047597%2FConstructors%2F-224945092" anchor-label="InAppNativeConfigModel" id="1099047597%2FConstructors%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-in-app-native-config-model.html"><span>In</span><wbr><span>App</span><wbr><span>Native</span><wbr><span>Config</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1099047597%2FConstructors%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contextType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXT_TYPE///PointingToDeclaration/">NativeAdUnit.CONTEXT_TYPE</span><span class="token punctuation">, </span></span><span class="parameter ">placementType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.PLACEMENTTYPE///PointingToDeclaration/">NativeAdUnit.PLACEMENTTYPE</span><span class="token punctuation">, </span></span><span class="parameter ">contextSubType<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXTSUBTYPE///PointingToDeclaration/">NativeAdUnit.CONTEXTSUBTYPE</span><span class="token punctuation">, </span></span><span class="parameter ">eventTracker<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TYPE///PointingToDeclaration/">NativeEventTracker.EVENT_TYPE</span><span class="token punctuation">, </span></span><span class="parameter ">trackerMethods<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TRACKING_METHOD///PointingToDeclaration/">NativeEventTracker.EVENT_TRACKING_METHOD</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">titleAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeTitleAsset///PointingToDeclaration/">NativeTitleAsset</span><span class="token punctuation">, </span></span><span class="parameter ">iconAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span><span class="token punctuation">, </span></span><span class="parameter ">imageAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span><span class="token punctuation">, </span></span><span class="parameter ">dataAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span><span class="token punctuation">, </span></span><span class="parameter ">bodyAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span><span class="token punctuation">, </span></span><span class="parameter ">ctaAsset<span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1946450535%2FProperties%2F-224945092" anchor-label="bodyAsset" id="1946450535%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body-asset.html"><span>body</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1946450535%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="body-asset.html">bodyAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2071175898%2FProperties%2F-224945092" anchor-label="contextSubType" id="2071175898%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context-sub-type.html"><span>context</span><wbr><span>Sub</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2071175898%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="context-sub-type.html">contextSubType</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXTSUBTYPE///PointingToDeclaration/">NativeAdUnit.CONTEXTSUBTYPE</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1382897068%2FProperties%2F-224945092" anchor-label="contextType" id="1382897068%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context-type.html"><span>context</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1382897068%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="context-type.html">contextType</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.CONTEXT_TYPE///PointingToDeclaration/">NativeAdUnit.CONTEXT_TYPE</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1811015515%2FProperties%2F-224945092" anchor-label="ctaAsset" id="-1811015515%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cta-asset.html"><span>cta</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1811015515%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="cta-asset.html">ctaAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1716981137%2FProperties%2F-224945092" anchor-label="dataAsset" id="-1716981137%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-asset.html"><span>data</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1716981137%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="data-asset.html">dataAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeDataAsset///PointingToDeclaration/">NativeDataAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1984394727%2FProperties%2F-224945092" anchor-label="eventTracker" id="1984394727%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-tracker.html"><span>event</span><wbr><span><span>Tracker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1984394727%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="event-tracker.html">eventTracker</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TYPE///PointingToDeclaration/">NativeEventTracker.EVENT_TYPE</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="769141502%2FProperties%2F-224945092" anchor-label="iconAsset" id="769141502%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="icon-asset.html"><span>icon</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="769141502%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="icon-asset.html">iconAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1395810480%2FProperties%2F-224945092" anchor-label="imageAsset" id="1395810480%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image-asset.html"><span>image</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1395810480%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="image-asset.html">imageAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeImageAsset///PointingToDeclaration/">NativeImageAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1365333558%2FProperties%2F-224945092" anchor-label="placementType" id="1365333558%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="placement-type.html"><span>placement</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1365333558%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="placement-type.html">placementType</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeAdUnit.PLACEMENTTYPE///PointingToDeclaration/">NativeAdUnit.PLACEMENTTYPE</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-906510099%2FProperties%2F-224945092" anchor-label="titleAsset" id="-906510099%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-asset.html"><span>title</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-906510099%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="title-asset.html">titleAsset</a><span class="token operator">: </span><span data-unresolved-link="org.prebid.mobile/NativeTitleAsset///PointingToDeclaration/">NativeTitleAsset</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-311672501%2FProperties%2F-224945092" anchor-label="trackerMethods" id="-311672501%2FProperties%2F-224945092" data-filterable-set=":bwmobile:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bwmobile:dokkaHtmlPartial/release" data-filterable-set=":bwmobile:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tracker-methods.html"><span>tracker</span><wbr><span><span>Methods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-311672501%2FProperties%2F-224945092"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bwmobile:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="tracker-methods.html">trackerMethods</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span data-unresolved-link="org.prebid.mobile/NativeEventTracker.EVENT_TRACKING_METHOD///PointingToDeclaration/">NativeEventTracker.EVENT_TRACKING_METHOD</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
