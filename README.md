@@ -47,6 +47,15 @@ Or you can import the .aar file to your project then dependency it into the app.
 
 To download precompile file, You can go to Actions tab -> Choose commit you want to download -> Go to Artifacs -> Download the file
 
+How to import .aar file from github actions to Android Studio project?
+
+1. Copy file .aar file to libs folder. Example: /Path/to/your/project/app/libs/bwmobile.aar
+2. In build.gradle file of your application add this code to dependencies
+   ```
+   implementation(files("libs/bwmobile.aar"))
+   ```
+3. Sync project with Gradle file 
+
 ### 2. Setup SDK
 #### a. Set BW Server
 Once you have a Bw server, you will add them to BW mobile. For example, if you’re using the Rubicon Server.
